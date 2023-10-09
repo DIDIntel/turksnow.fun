@@ -1,3 +1,17 @@
+
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.5s ease-out;
+    transition-delay: 0.3s;
+
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 :root {
     --ffsd: 0px;
     --1vw: calc((100vw - var(--sbw, 0px)) / 100);
