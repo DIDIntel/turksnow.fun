@@ -98,24 +98,37 @@
             </h2>
             <p data-aos="fade-up" style="font-family: YACkoButpeE-0;"></p>
 
-            <div style="height: 20px;"></div>
+
             <!-- Datepickers and Button -->
             <div data-aos="fade-up" data-aos-delay="100"
               class="col-12 d-flex justify-content-center align-items-center">
-              <form class="d-flex">
-                <!-- date pickers 
+              <form class="d-flex" action="https://formspree.io/f/maygvlan" method="POST">
                 <div class="formfield">
                   <input type="text" value="From" style="margin-right: -100px;color: gray;" />
-                  <input type="datetime-local" value="2023-01-01T00:00" max="2023-02-10T00:00" style="width: 100%;" />
+                  <input type="date" name="date-from" value="2023-12-15" max="2024-05-10" style="width: 100%;"
+                    required />
                 </div>
 
                 <div class="formfield">
                   <input type="text" value="To" style="margin-right: -100px;color: gray;" />
-                  <input type="datetime-local" value="2023-01-01T00:00" max="2023-02-10T00:00" style="width: 100%;" />
+                  <input type="date" name="date-to" value="2023-12-17" max="2024-05-10" style="width: 100%;" required />
                 </div>
-                -->
-                <a data-aos="fade-up" data-aos-delay="200" href="#mwvweQZjaIgEhU0c" class="btn-get-started"
-                  style="font-family: YACkoButpeE-0;">Book Now</a>
+                <div class="formfield">
+                  <input type="text" value="Guests" style="margin-right: -100px;color: gray;" readonly />
+                  <input type="number" name="number-guests" value="2" required="">
+                </div>
+                <div class="formfield">
+                  <input type="text" value="Rooms" style="margin-right: -100px;color: gray;" />
+                  <input type="number" name="number-rooms" value="1" required="">
+                </div>
+                <div class="formfield">
+                  <input type="text" value="Email" style="margin-right: -100px;color: gray;" />
+                  <input type="email" style="width: 100%;" placeholder="Your Email Here" name="email" id="email"
+                    required>
+                </div>
+                <input type="text" name="destination" value="Palandoken" hidden>
+                <button type="submit" data-aos="fade-up" data-aos-delay="200" class="btn-get-started"
+                  style="font-family: YACkoButpeE-0;">Book Now</button>
               </form>
             </div>
 
